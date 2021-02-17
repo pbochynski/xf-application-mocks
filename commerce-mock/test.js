@@ -36,7 +36,7 @@ describe('test app', function () {
                 });
             });
             describe('GET InboundProduct console', function () {
-                it('should return 200', function (done) {
+                it.skip('should return 200', function (done) {
                     request(app)
                         .get('/api/odata2webservices/InboundProduct/console/')
                         .expect(200)
@@ -44,7 +44,7 @@ describe('test app', function () {
                 });
             });
             describe('GET InboundProduct metadata', function () {
-                it('should return 200', function (done) {
+                it.skip('should return 200', function (done) {
                     request(app)
                         .get('/odata2webservices/InboundProduct/$metadata')
                         .expect(200)

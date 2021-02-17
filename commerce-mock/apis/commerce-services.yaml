@@ -919,7 +919,7 @@ paths:
       tags:
       - Merchant Callback
       summary: Verify the decision of the Merchant
-      description: "Verifies the decision of the merchant. \n\nNote, the “Try it out”\
+      description: "Verifies the decision of the merchant. Note, the “Try it out”\
         \ button is not enabled for this method (always returns an error) because\
         \ the Merchant Callback Controller handles parameters differently, depending\
         \ on which payment provider is used. For more information about this controller,\
@@ -955,7 +955,7 @@ paths:
       - Merchant Callback
       summary: Verify the decision of the Merchant for a cart
       description: "Verifies the decision of the merchant for a specified cart, and\
-        \ stores information of the PaymentSubscriptionResult for the cart. \n\nNote,\
+        \ stores information of the PaymentSubscriptionResult for the cart. Note,\
         \ the “Try it out” button is not enabled for this method (always returns an\
         \ error) because the Merchant Callback Controller handles parameters differently,\
         \ depending on which payment provider is used. For more information about\

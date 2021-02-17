@@ -5,7 +5,6 @@ const config = require('@varkes/configuration')
 const openapi = require('@varkes/openapi-mock')
 const odata = require('@varkes/odata-mock')
 const server = require('@varkes/api-server')
-const cockpit = require("@varkes/cockpit")
 const app = require('express')()
 const orders = require('./orders.json');
 
@@ -18,7 +17,6 @@ var runAsync = async () => {
   try {
     customizeMock(app)
     let configuration = await config.resolveFile("./varkes_config.json", __dirname)
-    app.use(await cockpit.init(configuration))
     app.use(await server.init(configuration))
     app.use(await odata.init(configuration))
     app.use(await openapi.init(configuration))
